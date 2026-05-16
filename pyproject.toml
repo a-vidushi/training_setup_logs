@@ -1,0 +1,18 @@
+[project]
+name = "openagrinet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "presidio-analyzer",
+    "presidio-anonymizer",
+    "spacy",
+    "pydantic>=2",
+    "pytest",
+    "langdetect",
+    # Semantic deduplication
+    "sentence-transformers",   # small hosted embedding model (all-MiniLM-L6-v2)
+    "faiss-cpu",               # FAISS flat-L2 index + k-means clustering
+    "numpy",                   # already pulled in by sentence-transformers; explicit for clarity
+]

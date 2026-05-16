@@ -1,0 +1,10 @@
+# Note: the spacy model en_core_web_lg must be downloaded separately.
+# Run setup.sh to automatically install these requirements and download the model.
+presidio-analyzer
+presidio-anonymizer
+pydantic>=2
+pytest
+langdetect          # language auto-detection (lightweight, offline)
+sentence-transformers  # embedding model for semantic deduplication (all-MiniLM-L6-v2)
+faiss-cpu              # FAISS k-means clustering for deduplication
+numpy                  # numerical arrays (transitively required; listed explicitly)
